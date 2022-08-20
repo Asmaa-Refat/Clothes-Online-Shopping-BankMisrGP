@@ -1,0 +1,94 @@
+<div class="search-container">
+  <img src="../../../assets/shoppingBasket.svg" alt="logo" />
+  <button
+    class="btn btn-outline-light btn-lg px-2"
+    *ngIf="_loginService.isLogged"
+    style="
+      color: #212529;
+      border-color: #212529;
+      font-size: 20px;
+      height: 40px;
+      line-height: 20px;
+      background-color: #f8f2ec;
+      margin: -3px;
+    "
+    id="same1"
+    routerLink="categories"
+  >
+    Categories
+  </button>
+
+  <button
+    class="btn btn-outline-light btn-lg px-2"
+    *ngIf="_loginService.isLogged"
+    style="
+      color: #212529;
+      border-color: #212529;
+      font-size: 20px;
+      height: 40px;
+      line-height: 20px;
+      background-color: #f8f2ec;
+      margin: 9px;
+    "
+    id="same1"
+    routerLink="categories/showCart"
+  >
+    Show cart
+  </button>
+
+  <button
+    class="btn btn-outline-light btn-lg px-2"
+    *ngIf="_loginService.isLogged"
+    style="
+      color: #212529;
+      border-color: #212529;
+      font-size: 20px;
+      height: 40px;
+      line-height: 20px;
+      background-color: #f8f2ec;
+      margin: -4px;
+    "
+    id="same2"
+    routerLink="profile"
+  >
+    Profile
+  </button>
+
+  <button
+    class="btn btn-outline-light btn-lg px-2"
+    *ngIf="_loginService.isLogged"
+    style="
+      color: #212529;
+      border-color: #212529;
+      font-size: 20px;
+      height: 40px;
+      line-height: 20px;
+      background-color: #f8f2ec;
+      margin: -4px;
+      margin-left: 9px;
+    "
+    id="same1"
+    routerLink="aboutUs"
+  >
+    About Us
+  </button>
+
+  <button
+    class="btn btn-outline-light btn-lg px-2"
+    *ngIf="_loginService.isLogged"
+    style="
+      color: #212529;
+      border-color: #212529;
+      font-size: 20px;
+      height: 40px;
+      line-height: 20px;
+      background-color: #f8f2ec;
+      margin: 9px;
+    "
+    id="same3"
+    (click)="logout()"
+    routerLink="/"
+  >
+    Log out
+  </button>
+</div>

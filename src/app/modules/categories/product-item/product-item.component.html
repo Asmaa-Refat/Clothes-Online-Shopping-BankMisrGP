@@ -1,0 +1,33 @@
+<img class="card-img-top" src="{{ item.imageUrl }}" alt="clothes" />
+
+<div
+  class="card"
+  style="
+    width: 13rem;
+    margin-top: -141%;
+    margin-left: 10px;
+    border: none;
+    width: 35%;
+    background: none;
+  "
+>
+  <div
+    class="card-body"
+    style="background: #ededeb; color: #3c4642; border-radius: 26px"
+  >
+    <h5 class="card-title">{{ item.name }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ item.price }}$</h6>
+    <div>-----------------</div>
+    <p class="card-text">{{ item.description }}</p>
+
+    <button [style]="changeColor()"></button>
+    <button [style]="changeColor2()"></button>
+    <button [style]="changeColor3()"></button>
+
+    <div style="margin-left: 7px">
+      <span style="font-size: 12px">{{ item.sizes[0] }} / </span>
+      <span style="font-size: 15px">{{ item.sizes[1] }} / </span>
+      <span style="font-size: 20px"> {{ item.sizes[2] }} </span>
+    </div>
+  </div>
+</div>

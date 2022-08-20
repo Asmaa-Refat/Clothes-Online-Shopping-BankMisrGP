@@ -1,0 +1,19 @@
+.row {
+  margin-top: 22px !important;
+  justify-content: center;
+}
+
+.Container {
+  background-image: url(./../assets/simple.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 30px);
+  padding: 5px;
+  margin: 0px;
+}
+
+.Container2 {
+  min-height: calc(100vh - 30px);
+  padding: 5px;
+  margin: 0px;
+}

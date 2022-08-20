@@ -1,0 +1,8 @@
+<app-header></app-header>
+
+<!--for changing the background-->
+<div [class]="_loginService.isLogged ? 'Container' : 'Container2'">
+  <router-outlet></router-outlet>
+</div>
+
+<app-footer></app-footer>

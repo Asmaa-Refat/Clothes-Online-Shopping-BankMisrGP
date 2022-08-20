@@ -1,0 +1,140 @@
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5" style="margin: 16px">
+        <div class="card bg-dark text-white" style="border-radius: 1rem">
+          <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+            <div
+              class="card-body p-5 text-center"
+              style="box-shadow: #212529 0px 5px 15px; height: 648px"
+            >
+              <div
+                class="mb-md-5 mt-md-4 pb-5"
+                style="line-height: 64%; margin-top: -32px !important"
+              >
+                <h2
+                  class="fw-bold mb-2 text-uppercase"
+                  style="color: #d9b18c; line-height: 0px; margin: 32px"
+                >
+                  Sign UP
+                </h2>
+
+                <div class="form-outline form-white mb-4">
+                  <label
+                    class="form-label"
+                    for="typeEmailX"
+                    style="color: #f8f2ec; margin-top: 43px"
+                    >Name
+                  </label>
+
+                  <input
+                    type="name"
+                    id="typeNameX"
+                    class="form-control form-control-lg"
+                    formControlName="userName"
+                    style="background-color: #f8f2ec; color: #d9b18c"
+                  />
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <label
+                    class="form-label"
+                    for="typeEmailX"
+                    style="color: #f8f2ec"
+                    >Email
+                  </label>
+
+                  <input
+                    type="email"
+                    id="typeEmailX"
+                    class="form-control form-control-lg"
+                    formControlName="email"
+                    style="background-color: #f8f2ec; color: #d9b18c"
+                    placeholder="ex: ee@xyz.com"
+                  />
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <label
+                    class="form-label"
+                    for="typePasswordX"
+                    style="color: #f8f2ec"
+                    >Password</label
+                  >
+
+                  <input
+                    type="password"
+                    id="typePasswordX"
+                    class="form-control form-control-lg"
+                    formControlName="password"
+                    style="background-color: #f8f2ec; color: #d9b18c"
+                    placeholder="ex: eeeEEE123@ (min Len = 8 )"
+                  />
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <label
+                    class="form-label"
+                    for="typeNumberX"
+                    style="color: #f8f2ec"
+                    >Phone Number
+                  </label>
+
+                  <input
+                    type="phoneNumber"
+                    id="typeNumberX"
+                    class="form-control form-control-lg"
+                    formControlName="phoneNumber"
+                    style="background-color: #f8f2ec; color: #d9b18c"
+                  />
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <label
+                    class="form-label"
+                    for="typeAddressX"
+                    style="color: #f8f2ec"
+                    >Address
+                  </label>
+
+                  <input
+                    type="address"
+                    id="typeAddressX"
+                    class="form-control form-control-lg"
+                    formControlName="address"
+                    style="background-color: #f8f2ec; color: #d9b18c"
+                  />
+                </div>
+
+                <button
+                  class="btn btn-outline-light btn-lg px-5"
+                  type="submit"
+                  [disabled]="!signUpForm.valid"
+                  id="signup"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+
+            <div style="transform: translate(143px, -35px)">
+              <p class="mb-0">
+                Already have an account?
+                <a
+                  class="text-white-50 fw-bold"
+                  routerLink="/"
+                  style="
+                    cursor: pointer;
+                    color: #d9b18c !important;
+                    transition: transform 0.2s !important;
+                  "
+                  >Login</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

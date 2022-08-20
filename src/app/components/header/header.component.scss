@@ -1,0 +1,34 @@
+.search-container {
+  width: 100%;
+  height: 53px;
+  background-color: #212529;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+#b2:hover {
+  background-color: #212529;
+  color: #e6ccb3 !important;
+}
+
+#b1:hover {
+  background-color: #212529;
+  color: #f8f2ec !important;
+}
+
+#same1:hover {
+  background-color: #b9a89e !important;
+}
+
+#same2:hover {
+  background-color: #b9a89e !important;
+}
+
+#same3:hover {
+  background-color: #b9a89e !important ;
+}

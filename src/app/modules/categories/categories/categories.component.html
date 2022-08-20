@@ -1,0 +1,22 @@
+<div class="row wrapper">
+  <div
+    *ngFor="let category of categories"
+    class="col-md-3 col-sm-3 mb-grid-gutter"
+  >
+    <div class="box">
+      <a
+        class="card border-0 shadow"
+        routerLink="product/{{ category.id }}"
+        style="background-color: #f8f2ec; text-decoration: none"
+      >
+        <img class="card-img-top" src="{{ category.imageUrl }}" alt="clothes" />
+        <div
+          class="card-body py-4 text-center"
+          style="color: #120e0f; text-shadow: 2px 2px 4px #53615c"
+        >
+          <h3>{{ category.name }}</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

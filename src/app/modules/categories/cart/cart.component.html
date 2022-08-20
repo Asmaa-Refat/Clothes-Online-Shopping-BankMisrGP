@@ -1,0 +1,46 @@
+<div
+  class="container"
+  class="row"
+  style="justify-content: center; margin-top: 146px"
+>
+  <div
+    *ngFor="let product of addedProducts; let i = index"
+    class="col-md-2 col-sm-3 mb-grid-gutter"
+  >
+    <a
+      class="card border-0 shadow"
+      style="background-color: #f8f2ec; text-decoration: none"
+    >
+      <img class="card-img-top" src="{{ product.imageUrl }}" alt="clothes" />
+
+      <div class="card-body py-4 text-center" style="color: #120e0f">
+        <h3 style="font-size: 15px">{{ product.name }}</h3>
+        <div class="box1">
+          <button
+            type="button"
+            (click)="delete(product.id)"
+            class="btn btn-info"
+            style="background: #ffccb3; border: none; margin: 6px"
+          >
+            <i class="fa fa-shopping-cart"></i> Delete
+          </button>
+        </div>
+      </div>
+
+      <div class="box1">
+        <button
+          type="button"
+          (click)="view(product)"
+          class="btn btn-info"
+          style="
+            background: #cce6ff;
+            border: none;
+            transform: translate(73px, -18px);
+          "
+        >
+          <i class="fa fa-eye"></i>View
+        </button>
+      </div>
+    </a>
+  </div>
+</div>

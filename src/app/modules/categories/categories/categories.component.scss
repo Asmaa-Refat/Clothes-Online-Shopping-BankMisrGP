@@ -1,0 +1,16 @@
+.wrapper {
+  justify-content: center;
+  margin-top: 15%;
+
+  .card-img-top {
+    height: 250px;
+  }
+  .box {
+    transition: 1s;
+  }
+
+  .box:hover {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+}

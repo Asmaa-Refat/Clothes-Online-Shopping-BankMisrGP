@@ -29,5 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## For installing Angular -->   npm install -g @angular/cli
 
 ## For creating new project --> ng new <projectName>
+  
+## For running the project --> ng serve   
 
-## For installing Bootstrap --> npm i bootstrap --save
+## For installing Bootstrap --> npm i bootstrap --save (we should run the project again after installing Bootstrap)
